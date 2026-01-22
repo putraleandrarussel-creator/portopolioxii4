@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⛰️ Wisata Gunung Pangradinan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for a more rugged/mountain feel */
+    .bg-mountain {
+      background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd0177'); /* Placeholder image for mountain */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="font-sans bg-mountain text-gray-800">
+  
+  <nav class="bg-gray-900/80 backdrop-blur-sm shadow-xl fixed w-full top-0 z-50 border-b-2 border-green-500">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-4">
+          <h1 class="text-3xl font-bold text-green-400">⛰️ Pangradinan</h1>
+          <div class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-300 hover:text-green-400 font-medium">🏠 Beranda</a>
+            <a href="#info" class="text-gray-300 hover:text-green-400 font-medium">🗺️ Info Puncak</a>
+            <a href="#activities" class="text-gray-300 hover:text-green-400 font-medium">🌲 Aktivitas</a>
+            <a href="#gallery" class="text-gray-300 hover:text-green-400 font-medium">📸 Galeri</a>
+            <a href="#tips" class="text-gray-300 hover:text-green-400 font-medium">📝 Tips</a>
+            <a href="#contact" class="text-gray-300 hover:text-green-400 font-medium">📞 Kontak</a>
+          </div>
+        </div>
+
+        <button id="mobile-menu-toggle" class="md:hidden p-2 text-white">☰</button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 border-t-2 border-green-500">
+      <div class="px-4 py-2 space-y-2">
+        <a href="#home" class="block py-2 text-gray-300 hover:text-green-400 font-medium">🏠 Beranda</a>
+        <a href="#info" class="block py-2 text-gray-300 hover:text-green-400 font-medium">🗺️ Info Puncak</a>
+        <a href="#activities" class="block py-2 text-gray-300 hover:text-green-400 font-medium">🌲 Aktivitas</a>
+        <a href="#gallery" class="block py-2 text-gray-300 hover:text-green-400 font-medium">📸 Galeri</a>
+        <a href="#tips" class="block py-2 text-gray-300 hover:text-green-400 font-medium">📝 Tips</a>
+        <a href="#contact" class="block py-2 text-gray-300 hover:text-green-400 font-medium">📞 Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="min-h-screen flex items-center justify-center text-center bg-gray-900/50 pt-24">
+    <div class="px-4 text-white">
+      <h1 class="text-6xl md:text-8xl font-extrabold mb-6 text-green-400 drop-shadow-lg">🌄 Gunung Pangradinan</h1>
+      <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8 text-gray-200 drop-shadow-md">Keindahan alam, jalur pendakian yang menantang, dan pemandangan luar biasa dari Puncak Pangradinan.</p>
+      <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-2xl">🧭 Jelajahi Sekarang</button>
+    </div>
+  </section>
+
+  <section id="info" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">🗺️ Info Puncak Utama</h2>
+        <p class="text-gray-600">Detail penting tentang Gunung Pangradinan</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="rounded-xl shadow-lg bg-green-50 p-6 hover:shadow-xl cursor-pointer">
+          <div class="text-6xl text-center mb-4 text-green-600">📍</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Lokasi</h3>
+          <p class="text-gray-600">Berada di perbatasan Kabupaten Bandung Barat dan Kabupaten Cianjur.</p>
+        </div>
+
+        <div class="rounded-xl shadow-lg bg-green-50 p-6 hover:shadow-xl cursor-pointer">
+          <div class="text-6xl text-center mb-4 text-green-600">📈</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Ketinggian</h3>
+          <p class="text-gray-600">Memiliki ketinggian sekitar 1.236 meter di atas permukaan laut (mdpl).</p>
+        </div>
+
+        <div class="rounded-xl shadow-lg bg-green-50 p-6 hover:shadow-xl cursor-pointer">
+          <div class="text-6xl text-center mb-4 text-green-600">☀️</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Daya Tarik</h3>
+          <p class="text-gray-600">Terkenal dengan pemandangan *golden sunrise* dan padang rumput (savana).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities" class="py-20 bg-green-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">🌲 Aktivitas di Pangradinan</h2>
+        <p class="text-gray-600">Kegiatan yang bisa dilakukan di kawasan gunung</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl cursor-pointer">
+          <div class="text-6xl text-center mb-4 text-gray-700">🚶</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Pendakian Singkat</h3>
+          <p class="text-gray-600">Jalur *trekking* yang relatif pendek, cocok untuk pendaki pemula.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl cursor-pointer">
+          <div class="text-6xl text-center mb-4 text-gray-700">⛺</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Camping/Bivak</h3>
+          <p class="text-gray-600">Mendirikan tenda di area savana untuk menikmati malam.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl cursor-pointer">
+          <div class="text-6xl text-center mb-4 text-gray-700">📸</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Fotografi</h3>
+          <p class="text-gray-600">Mengabadikan pemandangan alam dan *sunrise* yang memukau.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">📸 Galeri Puncak</h2>
+        <p class="text-gray-600">Pemandangan terbaik Gunung Pangradinan</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="h-64 bg-gray-200 rounded-xl flex items-center justify-center text-xl shadow-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1519378036214-747683935824');">Savana Pangradinan</div>
+        <div class="h-64 bg-gray-200 rounded-xl flex items-center justify-center text-xl shadow-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1510414842594-ead2bf2639bb');">Golden Sunrise</div>
+        <div class="h-64 bg-gray-200 rounded-xl flex items-center justify-center text-xl shadow-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1508923363412-212dc91a27e7');">Jalur Pendakian</div>
+        <div class="h-64 bg-gray-200 rounded-xl flex items-center justify-center text-xl shadow-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1476900543705-acd2145876de');">Pemandangan Kota</div>
+        <div class="h-64 bg-gray-200 rounded-xl flex items-center justify-center text-xl shadow-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1498642284905-cc951c33a202');">Area Camping</div>
+        <div class="h-64 bg-gray-200 rounded-xl flex items-center justify-center text-xl shadow-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541480112702-8687a4192b42');">Hutan Pinus</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips" class="py-20 bg-green-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">📝 Tips Mendaki Aman</h2>
+        <p class="text-gray-600">Panduan dan saran untuk perjalanan yang aman dan menyenangkan</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="bg-white p-6 rounded-xl shadow-lg">
+          <div class="h-40 bg-green-200 rounded-xl mb-4 flex items-center justify-center text-5xl">🎒</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Perlengkapan Dasar</h3>
+          <p class="text-gray-600">Pastikan membawa jaket, senter, dan obat-obatan pribadi.</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow-lg">
+          <div class="h-40 bg-green-200 rounded-xl mb-4 flex items-center justify-center text-5xl">💧</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Hidrasi dan Logistik</h3>
+          <p class="text-gray-600">Bawa air minum yang cukup dan makanan ringan berenergi.</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow-lg">
+          <div class="h-40 bg-green-200 rounded-xl mb-4 flex items-center justify-center text-5xl">🚫</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Jaga Kebersihan</h3>
+          <p class="text-gray-600">Selalu bawa turun sampah Anda. *Leave No Trace*.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">📞 Kontak & Informasi Basecamp</h2>
+        <p class="text-gray-600">Hubungi kami untuk informasi perizinan dan jalur</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <form class="space-y-4 bg-green-50 p-8 rounded-xl shadow-lg">
+          <input type="text" placeholder="Nama" class="w-full px-4 py-3 border rounded-lg">
+          <input type="email" placeholder="Email" class="w-full px-4 py-3 border rounded-lg">
+          <textarea rows="5" placeholder="Pesan" class="w-full px-4 py-3 border rounded-lg"></textarea>
+          <button class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg w-full">Kirim Pertanyaan</button>
+        </form>
+
+        <div class="bg-green-50 p-8 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Informasi Basecamp Resmi</h3>
+          <p class="text-gray-600">📍 Basecamp Pangradinan, Bandung Barat, Jawa Barat</p>
+          <p class="text-gray-600">📧 info@pangradinan.com</p>
+          <p class="text-gray-600">📱 +62 851-5678-0000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-8 text-center">
+    <p>© 2024 Wisata Gunung Pangradinan — Jaga kelestarian alam kita.</p>
+  </footer>
+
+  <section id="detail-lokasi" class="py-20 bg-white border-t border-green-300">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">📍 Detail: Lokasi Pangradinan</h2>
+      <p class="text-gray-700 mb-4">Gunung Pangradinan terletak di perbatasan antara dua kabupaten, menjadikannya destinasi yang mudah diakses dari Bandung maupun Cianjur.</p>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">Akses Utama</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>Via Cikalong Wetan (Bandung Barat)</li>
+        <li>Via Cipatat (Cianjur)</li>
+        <li>Waktu tempuh pendakian relatif singkat, sekitar 1-2 jam ke puncak.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="detail-ketinggian" class="py-20 bg-white border-t border-green-300">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">📈 Detail: Ketinggian</h2>
+      <p class="text-gray-700 mb-4">Dengan ketinggian 1.236 mdpl, Pangradinan digolongkan sebagai gunung dengan jalur pendakian yang ramah untuk pemula dan cocok untuk *one-day trip*.</p>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">Estimasi Waktu</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>Dari Basecamp ke Puncak: ± 1,5 jam</li>
+        <li>Total waktu perjalanan (pulang-pergi) : ± 3 jam (tanpa istirahat)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="detail-dayatarik" class="py-20 bg-white border-t border-green-300">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">☀️ Detail: Daya Tarik</h2>
+      <p class="text-gray-700 mb-4">Daya tarik utama Pangradinan adalah padang rumput (savana) yang luas dan pemandangan matahari terbit (*golden sunrise*) yang menawan.</p>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">Poin Pemandangan</h3>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>Pemandangan Gunung Burangrang dan Gunung Tangkuban Parahu dari kejauhan</li>
+        <li>Panorama padang savana yang indah</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="detail-pendakian" class="py-20 bg-white border-t border-green-300">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">🚶 Pendakian Singkat</h2>
+      <p class="text-gray-700 mb-4">Jalur pendakian yang relatif landai dan tidak terlalu panjang, ideal untuk pendaki pemula atau keluarga.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Pilih jalur yang sudah terverifikasi dan berizin.</li>
+        <li>Lakukan pemanasan sebelum mendaki.</li>
+        <li>Disarankan mendaki saat pagi buta untuk mengejar *sunrise*.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="detail-camping" class="py-20 bg-white border-t border-green-300">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">⛺ Camping/Bivak</h2>
+      <p class="text-gray-700 mb-4">Merasakan sensasi bermalam di alam terbuka Pangradinan.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Pastikan mendirikan tenda di area yang diperbolehkan.</li>
+        <li>Bawa kantong tidur yang memadai karena suhu malam bisa sangat dingin.</li>
+        <li>Siapkan izin *camping* dari pengelola basecamp.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="detail-fotografi" class="py-20 bg-white border-t border-green-300">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">📸 Fotografi Alam</h2>
+      <p class="text-gray-700 mb-4">Spot-spot foto terbaik ada di area savana dan puncaknya saat matahari terbit.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Waktu terbaik untuk foto: *Golden Hour* (saat terbit dan terbenam).</li>
+        <li>Pemandangan dari puncak yang menghadap gunung-gunung lain di Bandung Raya.</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    // Toggle mobile menu
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Scroll to detail when card clicked (Updated for mountain sections)
+    const cardActions = {
+      'Lokasi': '#detail-lokasi',
+      'Ketinggian': '#detail-ketinggian',
+      'Daya Tarik': '#detail-dayatarik',
+      'Pendakian Singkat': '#detail-pendakian',
+      'Camping/Bivak': '#detail-camping',
+      'Fotografi': '#detail-fotografi'
+    };
+
+    document.querySelectorAll('#info .rounded-xl, #activities .rounded-xl').forEach(card => {
+      card.addEventListener('click', () => {
+        const title = card.querySelector('h3')?.innerText;
+        if (cardActions[title]) {
+          document.querySelector(cardActions[title]).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

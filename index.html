@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russel Putra Leandra | Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .skill-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 1. Header & Navigation -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">Russel.</div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link font-medium">Home</a>
+                <a href="#about" class="nav-link font-medium">About</a>
+                <a href="#skills" class="nav-link font-medium">Skills</a>
+                <a href="#portfolio" class="nav-link font-medium">Portfolio</a>
+                <a href="#contact" class="nav-link font-medium">Contact</a>
+            </div>
+            
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- 2. Beranda (Home) -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-semibold">Pelajar & Kreator</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold mt-4 leading-tight">
+                    Halo, Saya <span class="text-blue-600">Russel Putra Leandra</span>
+                </h1>
+                <p class="text-xl text-gray-600 mt-6 max-w-lg">
+                    Siswa SMAN 1 Subang yang bersemangat dalam eksplorasi teknologi, desain, dan kegiatan organisasi.
+                </p>
+                <div class="mt-10 flex space-x-4">
+                    <a href="#portfolio" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Lihat Portofolio</a>
+                    <a href="#contact" class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 bg-blue-200 rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition duration-500">
+                    <!-- Placeholder image - Replace with actual photo -->
+                    <img src="https://raw.githubusercontent.com/putraleandrarussel-creator/portopolioxii4/refs/heads/main/32_Russel%20Putra%20Leandra.jpg" alt="Russel Putra Leandra" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Tentang Saya (About Me) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Tentang Saya</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Profil Singkat</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Halo! Saya Russel, seorang siswa di <strong>SMAN 1 Subang</strong> yang sangat antusias dengan dunia kreatif dan pengembangan diri! Saya aktif dalam <strong>Ekstrakurikuler Wana Putera (Pecinta Alam)</strong>. Salah satu pencapaian yang paling berkesan bagi saya adalah berhasil menyelesaikan pendakian dan pelatihan dasar kepemimpinan di alam terbuka.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Saya berminat untuk melanjutkan studi saya di bidang <strong>Teknologi Informasi atau Desain Komunikasi Visual</strong> untuk terus mengembangkan potensi saya.
+                    </p>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Nilai Unggulan:</h4>
+                        <div class="flex space-x-4">
+                            <div class="bg-green-100 text-green-700 px-4 py-2 rounded-lg text-sm">PJOK: 90</div>
+                            <div class="bg-orange-100 text-orange-700 px-4 py-2 rounded-lg text-sm">PPKN: 90</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Riwayat Pendidikan</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white p-2 rounded-lg mr-4 mt-1"><i class="fas fa-school"></i></div>
+                            <div>
+                                <h4 class="font-bold">SMAN 1 Negeri Subang</h4>
+                                <p class="text-sm text-gray-500">2023 - Sekarang</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-400 text-white p-2 rounded-lg mr-4 mt-1"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <h4 class="font-bold">SMPN 1 Negeri Subang</h4>
+                                <p class="text-sm text-gray-500">2020 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-300 text-white p-2 rounded-lg mr-4 mt-1"><i class="fas fa-child"></i></div>
+                            <div>
+                                <h4 class="font-bold">SD HARUMANIS</h4>
+                                <p class="text-sm text-gray-500">2014 - 2020</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-200 text-white p-2 rounded-lg mr-4 mt-1"><i class="fas fa-baby"></i></div>
+                            <div>
+                                <h4 class="font-bold">TK Nurul Iman</h4>
+                                <p class="text-sm text-gray-500">2013 - 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Keahlian (Skills) -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-16">Keahlian Saya</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Hard Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-8 text-left border-b pb-2">Hard Skills</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700 italic">Desain Grafis Dasar</span>
+                                <span class="text-blue-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700 italic">Video Editing</span>
+                                <span class="text-blue-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700 italic">English</span>
+                                <span class="text-blue-600">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-left">
+                    <h3 class="text-xl font-bold mb-8 border-b pb-2">Soft Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-card p-4 border border-gray-100 rounded-xl bg-gray-50">
+                            <i class="fas fa-comments text-blue-600 mb-2"></i>
+                            <p class="font-semibold text-sm">Komunikasi Efektif</p>
+                        </div>
+                        <div class="skill-card p-4 border border-gray-100 rounded-xl bg-gray-50">
+                            <i class="fas fa-users text-blue-600 mb-2"></i>
+                            <p class="font-semibold text-sm">Leadership</p>
+                        </div>
+                        <div class="skill-card p-4 border border-gray-100 rounded-xl bg-gray-50">
+                            <i class="fas fa-lightbulb text-blue-600 mb-2"></i>
+                            <p class="font-semibold text-sm">Problem Solving</p>
+                        </div>
+                        <div class="skill-card p-4 border border-gray-100 rounded-xl bg-gray-50">
+                            <i class="fas fa-clock text-blue-600 mb-2"></i>
+                            <p class="font-semibold text-sm">Manajemen Waktu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Portofolio & 6. Pengalaman -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Karya & Prestasi</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Project 1 -->
+                <div class="group overflow-hidden rounded-2xl shadow-lg bg-gray-50">
+                    <img src="https://via.placeholder.com/600x400" alt="Proyek Video" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Cinematic School Tour</h4>
+                        <p class="text-sm text-gray-600 mb-4">Video dokumenter pendek tentang fasilitas dan lingkungan SMAN 1 Subang.</p>
+                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Lihat Karya <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group overflow-hidden rounded-2xl shadow-lg bg-gray-50">
+                    <img src="https://via.placeholder.com/600x400" alt="Desain Poster" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Poster Kampanye Lingkungan</h4>
+                        <p class="text-sm text-gray-600 mb-4">Desain grafis untuk kampanye kebersihan di lingkungan sekolah.</p>
+                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Lihat Karya <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Prestasi Card -->
+                <div class="p-8 rounded-2xl bg-blue-600 text-white flex flex-col justify-center">
+                    <h4 class="text-2xl font-bold mb-4">Organisasi & Prestasi</h4>
+                    <ul class="space-y-4 text-blue-50">
+                        <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i> Pecinta Alam Wana Putera</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i> Sertifikat Kepemimpinan OSIS</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i> Juara Lomba Video Pendek</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Kontak -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-blue-600 p-10 text-white">
+                    <h3 class="text-2xl font-bold mb-6">Info Kontak</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-4"></i>
+                            <span class="text-sm">putraleandrarussel@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-4"></i>
+                            <span class="text-sm">085123294316</span>
+                        </div>
+                        <div class="flex space-x-4 pt-6">
+                            <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-github text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 p-10">
+                    <h3 class="text-2xl font-bold mb-6">Kirim Pesan</h3>
+                    <form action="#" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Nama Anda" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-blue-600">
+                            <input type="email" placeholder="Email Anda" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-blue-600">
+                        </div>
+                        <textarea rows="4" placeholder="Pesan Anda" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-blue-600"></textarea>
+                        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition w-full md:w-auto">Kirim Sekarang</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="py-10 bg-white border-t">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <div class="text-xl font-bold text-blue-600">Russel Putra Leandra</div>
+                <p class="text-sm text-gray-500 mt-1 italic">Pelajar | Pecinta Alam | Kreator</p>
+            </div>
+            <p class="text-gray-500 text-sm">© Russel – 2026. All rights reserved.</p>
+            <div class="mt-4 md:mt-0 flex space-x-6 text-gray-400">
+                <a href="#" class="hover:text-blue-600">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-600">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
